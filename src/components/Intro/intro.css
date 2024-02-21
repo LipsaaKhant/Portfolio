@@ -1,0 +1,86 @@
+#intro {
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg{
+    position: absolute;
+    top: -4rem;
+    margin-top: 4rem;
+    right: 0;
+    z-index: -1 ;
+    object-fit: cover;
+    height: 60vh;
+    
+
+}
+
+.introContent{
+    height: 85vh;
+    padding: 2rem;
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    white-space: pre-line;
+}
+
+.hello {
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introName {
+    color:#E8C872;
+    font-weight: 900;
+
+}
+
+.introPara {
+    font-size: medium;
+    font-weight: 200;
+    letter-spacing: 1px;
+    max-width: 40rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width:900px){
+    .bg{
+        right: -8vw;
+    }
+    .introContent{
+        font-size: 10vw;
+    }
+    .hello{
+        font-size: 4.5;
+    }    
+}
+@media screen and (max-width:480px) {
+    .bg{
+        right: -20vw;
+    }
+    
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+    
+    .introContent {
+        padding: 1rem; /* Adjusted padding for smaller screens */
+        font-size: 2rem; /* Adjusted font size for smaller screens */
+    }
+    
+    .hello {
+        font-size: 1.5rem; /* Adjusted font size for smaller screens */
+    }
+    
+    .introPara {
+        font-size: small; /* Adjusted font size for smaller screens */
+    }
+}
