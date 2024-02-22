@@ -11,7 +11,10 @@ const Intro = () => {
                 <p className="introPara"> A Master of Science graduate, with a strong foundation and experience in programming principles and software engineering across diverse platforms.
                 I code cool websites and app leveraging lastest technolgoies.</p>
             </div>
-            <img src= {bg} alt="" className="bg" />
+            <div style={{padding:'5px'}}>
+                <center><img src= {bg} alt="" className="bg" /></center>  
+            </div>
+            
         </section>
     )
 

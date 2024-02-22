@@ -9,7 +9,7 @@ import drum from '../../assets/drum.png';
 
 const Projects = () => {
     return (
-        <section id="projects">
+        <div id="projects">
             <h2 className="projectHeading"> Projects</h2>
             <p className="projectIntro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel libero ac elit molestie fermentum. Fusce tempor, libero id fermentum ultricies, elit nulla pharetra est, vel efficitur nisi odio vel leo. Nullam auctor, urna eu commodo varius, lorem est pellentesque orci, ac tincidunt ipsum purus sit amet velit. Vivamus eu lectus metus. Nulla facilisi. Duis vitae sapien nec purus lacinia malesuada. In consequat euismod ante, eget vestibulum ipsum.</p>
             <div className="projectItems">
@@ -20,7 +20,7 @@ const Projects = () => {
                 <img src={weather} alt= "API" className="projectItem" />
                 <img src={game} alt= "Dice" className="projectItem" />               
             </div>
-        </section>
+        </div>
     );
 }
 

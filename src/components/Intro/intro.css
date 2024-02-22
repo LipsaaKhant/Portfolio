@@ -10,20 +10,26 @@
 .bg{
     position: absolute;
     top: -4rem;
-    margin-top: 4rem;
+    margin-top: 8.5rem;
     right: 0;
     z-index: -1 ;
     object-fit: cover;
-    height: 60vh;
-    
+    height: 50vh;
+    /* border-radius: 50%;  This creates a circular shape */
+    /* overflow: hidden;  This ensures the image doesn't overflow the circular frame */
+    /* border: 2px solid #fff;  Optional: Add a border to the frame */    
+    /* background-color: rgb(205 205 205 / 66%); */
 
 }
 
+
+
 .introContent{
     height: 85vh;
+    width: 100vw;
     padding: 2rem;
     color: white;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
     display: flex;
     flex-direction: column;
@@ -43,7 +49,7 @@
 }
 
 .introPara {
-    font-size: medium;
+    font-size: 1.2rem;
     font-weight: 200;
     letter-spacing: 1px;
     max-width: 40rem;
@@ -53,6 +59,7 @@
 @media screen and (max-width:900px){
     .bg{
         right: -8vw;
+        height: 60vh;
     }
     .introContent{
         font-size: 10vw;
@@ -82,5 +89,8 @@
     
     .introPara {
         font-size: small; /* Adjusted font size for smaller screens */
+    }
+    .bg{
+        align-self: center;
     }
 }

@@ -2,7 +2,7 @@
   background: #637A9F;
   height: 7rem;
   width: 100vw;
-  max-width: 75rem;
+  max-width: 90rem;
   margin: 0 auto;
   padding: 1rem 2rem;
   display: flex;
@@ -13,6 +13,7 @@
   z-index: 3;
 }
 
+/*Logo Img*/
 .logo{
   object-fit:cover;
   align-self: flex-start;
@@ -20,8 +21,8 @@
   width: auto;
 }
 
-/*List*/
 
+/*Navbar Item*/
 .desktopMenuListItem{
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: large;
@@ -29,19 +30,19 @@
   color: #FFF3CF;
   margin: 1.5rem;
   cursor: pointer;
+
 }
 
 .desktopMenuListItem:hover {
   color: #C9D7DD;
   padding-bottom: 0.5rem;
+  border-bottom: 2px solid #C9D7DD;
 
 }
 
 
 
 /*Button*/
-
-
 .desktopMenuBtn {
   --c:  #C9D7DD; /* the color*/
   
@@ -87,29 +88,51 @@
   display: none;
   object-fit: cover;
   cursor: pointer;
-  height: auto;
+  height: 2rem;
+  z-index: 2;
 }
 
-.burgerMenu {
+/* .burgerMenu {
   position: absolute;
-  top: 4rem;
+  display: none;
+  top: 6rem;
   right: 2rem;
-  z-index: 2;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   padding: 0.5rem;
-  height: fit-content;
-  min-width: 12rem;
+  height: 40vh;
+  min-width: 10rem;
   background: #f1f8fc;
   border-radius: 1rem;
-} 
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}  */
+
+.burgerMenu {
+  position: fixed; /* Change to fixed position */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Make full width */
+  height: 100vh; /* Make full height */
+  background: #C9D7DD;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
 
 
 .burgerMenuListItem {
   color:#637A9F;
   padding: 1 3rem;
   margin: 0.25rem;
-  background: #C9D7DD;
+
 }
 
 .burgerMenu.show {
@@ -127,6 +150,9 @@
   }
   .desktopMenuBtn{
     display: none;
+  }
+  .navbar{
+    align-items: flex-end;
   }
   
 }
